@@ -4,6 +4,7 @@ This project  is a 16 button Arcade Stick with an Analog thumb Joystick. This pr
 https://github.com/SnrNotHere16/ArcadeStickWithScreen
 
 <img src = "https://github.com/SnrNotHere16/ArcadeStickWithScreen/blob/master/ArcadeStickImages/15ButtonArcadeStick.jpg" width= "500" >
+
 # Testing inputs
  The best way to test the inputs is to type "Set up USB game controllers" into the windows search bar. This should prompt this screen. 
  
@@ -17,8 +18,7 @@ https://github.com/SnrNotHere16/ArcadeStickWithScreen
  <img src = "ArcadeStickImages/ArcadeStickWScreenSchematic.JPG" width= "500" >
  
  # Additional Images
- <img src = "ArcadeStickImages/ArcadeStickButtons.jpg" width= "500" >
- <img src = "ArcadeStickImages/2ArcadeButtons.jpg" width= "500" >
+
  
  # Simple Setup
 1. Open LM Flash Programmer

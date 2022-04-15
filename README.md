@@ -1,6 +1,6 @@
 The following is a 16 button arcade stick using the tiva TM4C123GXL microcontroller.
 # 16 Button Arcade Stick with Analog thumb Joystick
-This project  is a 16 button Arcade Stick with an Analog thumb Joystick. This project was clone from my former project, which was a 15 button controller with an LCD screen. This project was made to add more buttons and make it more easier for people to use. 
+This project  is a 16 button Arcade Stick with an Analog thumb Joystick. This project was cloned from my former project, which was a 15 button controller with a LCD screen. This project was made to add more buttons and make it more easier for people to use and implement.
 https://github.com/SnrNotHere16/ArcadeStickWithScreen
 
 <img src = "https://github.com/SnrNotHere16/ArcadeStickWithScreen/blob/master/ArcadeStickImages/15ButtonArcadeStick.jpg" width= "500" >

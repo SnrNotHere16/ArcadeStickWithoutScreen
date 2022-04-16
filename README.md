@@ -6,22 +6,22 @@ https://github.com/SnrNotHere16/ArcadeStickWithScreen
 <img src = "https://github.com/SnrNotHere16/ArcadeStickWithScreen/blob/master/ArcadeStickImages/15ButtonArcadeStick.jpg" width= "500" >
 
 Buttons/Ports 
-//! Button0 - PB0
-//! Button1 - PB1
-//! Button2 - PB2
-//! Button3 - PB3
-//! Button4 - PB4
-//! Button5 - PB5
-//! Button6 - PB6
-//! Button7 - PB7
-//! Button8 - PC4
-//! Button9 - PC5
-//! Button10 - PC6
-//! Button11 - PC7
-//! Button12 - PA2
-//! BUTTON13 - PA3
-//! BUTTON14 - PA4
-//! Button15 - PA5
+ Button0 - PB0  <br />
+ Button1 - PB1  <br />
+ Button2 - PB2  <br />
+ Button3 - PB3  <br />
+ Button4 - PB4  <br />
+ Button5 - PB5  <br />
+ Button6 - PB6  <br />
+ Button7 - PB7  <br />
+ Button8 - PC4  <br />
+ Button9 - PC5  <br />
+ Button10 - PC6 <br />
+ Button11 - PC7 <br />
+ Button12 - PA2 <br />
+ Button13 - PA3 <br />
+ Button14 - PA4 <br />
+ Button15 - PA5 <br />
 
 # Testing inputs
  The best way to test the inputs is to type "Set up USB game controllers" into the windows search bar. This should prompt this screen. 

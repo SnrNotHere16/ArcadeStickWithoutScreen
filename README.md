@@ -5,7 +5,7 @@ https://github.com/SnrNotHere16/ArcadeStickWithScreen
 
 <img src = "https://github.com/SnrNotHere16/ArcadeStickWithScreen/blob/master/ArcadeStickImages/15ButtonArcadeStick.jpg" width= "500" >
 
-Buttons/Ports 
+Buttons/Ports   <br /> 
  Button0 - PB0  <br />
  Button1 - PB1  <br />
  Button2 - PB2  <br />

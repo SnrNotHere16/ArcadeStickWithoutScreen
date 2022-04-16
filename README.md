@@ -39,5 +39,7 @@ https://github.com/SnrNotHere16/ArcadeStickWithScreen
 <img src = "https://github.com/SnrNotHere16/ArcadeStickWithoutScreen/blob/master/ArcadeStickImages/ResourceExplorerNew.PNG" width= "500" >
 Original project running 
 <img src = "https://github.com/SnrNotHere16/ArcadeStickWithoutScreen/blob/master/ArcadeStickImages/BlueLED.jpg" width= "500" >
-3. If you would like to run this project. You need to modify four files. Copy and paste the code from these files to the matching files in the starter project. https://github.com/SnrNotHere16/ArcadeStickWithoutScreen/tree/master/usb_dev_gamepad_files_changed/usb_dev_gamepad_altered_code
+3. If you would like to run this repository's project. You need to modify four files. Copy and paste the code from these files to the matching files in the starter project.
+   https://github.com/SnrNotHere16/ArcadeStickWithoutScreen/tree/master/usb_dev_gamepad_files_changed/usb_dev_gamepad_altered_code
+   
 4. Build and load the program then switch to device mode. This time the green LED should flash instead of the blue LED. 

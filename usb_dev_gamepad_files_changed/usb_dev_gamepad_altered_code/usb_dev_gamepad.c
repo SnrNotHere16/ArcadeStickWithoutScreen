@@ -46,18 +46,6 @@
 #include "drivers/buttons.h"
 #include "utils/uartstdio.h"
 
-
-// Backlight (pin 10) connected to +3.3 V
-// MISO (pin 9) unconnected
-// SCK (pin 8) connected to PA2 (SSI0Clk)
-// MOSI (pin 7) connected to PA5 (SSI0Tx)
-// TFT_CS (pin 6) connected to PA3 (SSI0Fss)
-// CARD_CS (pin 5) unconnected
-// Data/Command (pin 4) connected to PA6 (GPIO)
-// RESET (pin 3) connected to PA7 (GPIO)
-// VCC (pin 2) connected to +3.3 V
-// Gnd (pin 1) connected to ground
-
 //*****************************************************************************
 //
 //! \addtogroup example_list
@@ -202,6 +190,7 @@ GamepadHandler(void *pvCBData, uint32_t ui32Event, uint32_t ui32MsgData,
             // Update the status.
             //
             UARTprintf("\nHost Connected...\n");
+   //         ST7735_OutString("\n  Host Connected...\n  MAME Controller\n  15 Buttons\n  Yellow:Print\n");
             break;
         }
 
@@ -216,6 +205,7 @@ GamepadHandler(void *pvCBData, uint32_t ui32Event, uint32_t ui32MsgData,
             // Update the status.
             //
             UARTprintf("\nHost Disconnected...\n");
+         //   ST7735_OutString("\nHost Disconnected...\n MAME Controller\n 14 Buttons\n");
             break;
         }
 
@@ -392,7 +382,7 @@ ADCInit(void)
 int
 main(void)
 {
-  //  uint8_t red, green, blue;
+
  //*****************************************************************************
  //
  // The HID gamepad report that is returned to the host.
@@ -423,12 +413,11 @@ main(void)
     // Enable the GPIO pin for the Blue LED (PF2).
     //
     ROM_GPIOPinTypeGPIOOutput(GPIO_PORTF_BASE, GPIO_PIN_3);
-
     //
     // Open UART0 and show the application name on the UART.
     //
     ConfigureUART();
-
+    //ROM_GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_2, GPIO_PIN_2);
     UARTprintf("\033[2JTiva C Series USB gamepad device example\n");
     UARTprintf("---------------------------------\n\n");
 
@@ -436,7 +425,6 @@ main(void)
     // Not configured initially.
     //
     g_iGamepadState = eStateNotConfigured;
-
     //
     // Enable the GPIO peripheral used for USB, and configure the USB
     // pins.
@@ -471,13 +459,6 @@ main(void)
     //
     USBDHIDGamepadInit(0, &g_sGamepadDevice);
 
-    //
-    // Zero out the initial report.
-    //
-    sReport.ui8Buttons = 0;
-    sReport.i8XPos = 0;
-    sReport.i8YPos = 0;
-    sReport.i8ZPos = 0;
     //
     // Initialize the reports to 0.
     //
@@ -614,6 +595,7 @@ main(void)
             if((ui16Buttons>>8) & 0x40)
             {
                 sReportA.ui16Buttons |= 0x4000;
+                //printButton();
 
             }
 

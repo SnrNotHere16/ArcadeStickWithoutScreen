@@ -69,6 +69,7 @@
 //! Button12 - PA2
 //! BUTTON13 - PA3
 //! BUTTON14 - PA4
+//! BUTTON15 - PA5
 //! The X, Y, and Z coordinates are
 //! reported using the ADC input on GPIO port E pins 1, 2, and 3.  The X input
 //! is on PE3, the Y input is on PE2 and the Z input is on PE1.  These are

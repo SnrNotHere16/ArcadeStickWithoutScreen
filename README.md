@@ -36,3 +36,4 @@ https://github.com/SnrNotHere16/ArcadeStickWithScreen
  <img src = "https://github.com/SnrNotHere16/ArcadeStickWithoutScreen/blob/master/ArcadeStickImages/ResourceExplorer.PNG" width= "500" >
  2. Add "usb_dev_gamepad". This is a starter project that uses only 2 buttons (PF0 and PF2), which are the onboard switches. You can run it and test it. If you want to test it, make sure once you load the project to switch the tiva-c to DEVICE mode.
 <img src = "https://github.com/SnrNotHere16/ArcadeStickWithoutScreen/blob/master/ArcadeStickImages/ResourceExplorer1.PNG" width= "500" >
+<img src = "https://github.com/SnrNotHere16/ArcadeStickWithoutScreen/blob/master/ArcadeStickImages/ResourceExplorerNew.PNG" width= "500" >

@@ -580,14 +580,14 @@ main(void)
                 sReportA.ui16Buttons |= 0x0800;
 
             }
-            //Button12 - PF so negative logic
-            if(!((ui16Buttons>>8) & 0x10))
+            //Button12
+            if((ui16Buttons>>8) & 0x10)
             {
                 sReportA.ui16Buttons |= 0x1000;
 
             }
-            //Button13 - PF so negative logic
-            if(!((ui16Buttons>>8) & 0x20))
+            //Button13
+            if((ui16Buttons>>8) & 0x20)
             {
                 sReportA.ui16Buttons |= 0x2000;
 
@@ -596,6 +596,13 @@ main(void)
             if((ui16Buttons>>8) & 0x40)
             {
                 sReportA.ui16Buttons |= 0x4000;
+
+            }
+
+            //Button14
+            if((ui16Buttons>>8) & 0x80)
+            {
+                sReportA.ui16Buttons |= 0x8000;
 
             }
 

@@ -93,7 +93,7 @@ ButtonsPoll(uint16_t *pui16Delta, uint16_t *pui16RawState)
     //  if the caller supplied storage for the
     // raw value.
     //
-    ui32Data  = (ROM_GPIOPinRead(BUTTONS_GPIO_BASE3,  GPIO_PIN_4)<<10) |
+    ui32Data  =
             (ROM_GPIOPinRead(BUTTONS_GPIO_BASE2,  GPIO_PIN_0)<<12) |
                 (ROM_GPIOPinRead(BUTTONS_GPIO_BASE2,  GPIO_PIN_4)<<9)  |
                ((ROM_GPIOPinRead(BUTTONS_GPIO_BASE1, ALL_BUTTONS1))<<4)|
@@ -174,7 +174,6 @@ ButtonsInit(void)
     ROM_SysCtlPeripheralEnable(BUTTONS_GPIO_PERIPH);
     ROM_SysCtlPeripheralEnable(BUTTONS_GPIO_PERIPH1);
     ROM_SysCtlPeripheralEnable(BUTTONS_GPIO_PERIPH2);
-    ROM_SysCtlPeripheralEnable(BUTTONS_GPIO_PERIPH3);
 
     //
     // Unlock PB0 & PC0 so we can change it to a GPIO input
@@ -193,10 +192,6 @@ ButtonsInit(void)
     HWREG(BUTTONS_GPIO_BASE2 + GPIO_O_CR) |= 0x01;
     HWREG(BUTTONS_GPIO_BASE2 + GPIO_O_LOCK) = 0;
 
-    HWREG(BUTTONS_GPIO_BASE3 + GPIO_O_LOCK) = GPIO_LOCK_KEY;
-    HWREG(BUTTONS_GPIO_BASE3 + GPIO_O_CR) |= 0x01;
-    HWREG(BUTTONS_GPIO_BASE3 + GPIO_O_LOCK) = 0;
-
     //
     // Set each of the button GPIO pins as an input with a pull-down.
     //
@@ -212,16 +207,11 @@ ButtonsInit(void)
     MAP_GPIOPadConfigSet(BUTTONS_GPIO_BASE2, ALL_BUTTONS2,
                          GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD_WPU );
 
-    ROM_GPIODirModeSet(BUTTONS_GPIO_BASE3, ALL_BUTTONS3, GPIO_DIR_MODE_IN);
-    MAP_GPIOPadConfigSet(BUTTONS_GPIO_BASE3, ALL_BUTTONS3,
-                         GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD_WPD );
-
     //
     // Initialize the debounced button state with the current state read from
     // the GPIO bank.
     //
     g_ui16ButtonStates =
-            (ROM_GPIOPinRead(BUTTONS_GPIO_BASE3,  GPIO_PIN_4)<<10) |
             (ROM_GPIOPinRead(BUTTONS_GPIO_BASE2,  GPIO_PIN_0)<<12) |
             (ROM_GPIOPinRead(BUTTONS_GPIO_BASE2,  GPIO_PIN_4)<<9) |
             (ROM_GPIOPinRead(BUTTONS_GPIO_BASE1, ALL_BUTTONS1)<<4)|

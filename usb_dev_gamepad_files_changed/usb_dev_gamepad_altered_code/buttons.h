@@ -41,21 +41,22 @@ extern "C"
 // Defines for the hardware resources used by the pushbuttons.
 //
 // The switches are on the following ports/pins:
-//! Button0 - PB0
-//! Button1 - PB1
-//! Button2 - PB2
-//! Button3 - PB3
-//! Button4 - PB4
-//! Button5 - PB5
-//! Button6 - PB6
-//! Button7 - PB7
-//! Button8 - PC4
-//! Button9 - PC5
-//! Button10 - PC6
-//! Button11 - PC7
-//! Button12 - PF0
-//! BUTTON13 - PF4
+//! BUTTON0 - PB0
+//! BUTTON1 - PB1
+//! BUTTON2 - PB2
+//! BUTTON3 - PB3
+//! BUTTON4 - PB4
+//! BUTTON5 - PB5
+//! BUTTON6 - PB6
+//! BUTTON7 - PB7
+//! BUTTON8 - PC4
+//! BUTTON9 - PC5
+//! BUTTON10 - PC6
+//! BUTTON11 - PC7
+//! BUTTON12 - PA2
+//! BUTTON13 - PA3
 //! BUTTON14 - PA4
+//! BUTTON15 - PA5
 // The switches tie the GPIO to ground, so the GPIOs need to be configured
 // with pull-ups, and a value of 1 means the switch is pressed.
 //
@@ -66,11 +67,8 @@ extern "C"
 #define BUTTONS_GPIO_PERIPH1    SYSCTL_PERIPH_GPIOC
 #define BUTTONS_GPIO_BASE1      GPIO_PORTC_BASE
 
-#define BUTTONS_GPIO_PERIPH2    SYSCTL_PERIPH_GPIOF
-#define BUTTONS_GPIO_BASE2      GPIO_PORTF_BASE
-
-#define BUTTONS_GPIO_PERIPH3    SYSCTL_PERIPH_GPIOA
-#define BUTTONS_GPIO_BASE3      GPIO_PORTA_BASE
+#define BUTTONS_GPIO_PERIPH2    SYSCTL_PERIPH_GPIOA
+#define BUTTONS_GPIO_BASE2      GPIO_PORTA_BASE
 
 
 
@@ -88,15 +86,15 @@ extern "C"
 #define BUTTON9                GPIO_PIN_5
 #define BUTTON10               GPIO_PIN_6
 #define BUTTON11               GPIO_PIN_7
-#define BUTTON12               GPIO_PIN_0
-#define BUTTON13               GPIO_PIN_4
+#define BUTTON12               GPIO_PIN_2
+#define BUTTON13               GPIO_PIN_3
 #define BUTTON14               GPIO_PIN_4
+#define BUTTON15               GPIO_PIN_5
 
 
 #define ALL_BUTTONS             (BUTTON0 | BUTTON1 | BUTTON2 | BUTTON3 | BUTTON4 |BUTTON5 | BUTTON6 |BUTTON7)
 #define ALL_BUTTONS1            (BUTTON8 | BUTTON9 | BUTTON10 | BUTTON11 )
-#define ALL_BUTTONS2            (BUTTON12 | BUTTON13)
-#define ALL_BUTTONS3            (BUTTON14)
+#define ALL_BUTTONS2            (BUTTON12 | BUTTON13 | BUTTON14 | BUTTON15)
 
 //*****************************************************************************
 //

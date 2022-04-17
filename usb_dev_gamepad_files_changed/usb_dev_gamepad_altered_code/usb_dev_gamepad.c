@@ -54,19 +54,19 @@
 //! This example application turns the evaluation board into USB game pad
 //! device using the Human Interface Device gamepad class.  The buttons on the
 //! board are reported as .
-//! Button0 - PB0
-//! Button1 - PB1
-//! Button2 - PB2
-//! Button3 - PB3
-//! Button4 - PB4
-//! Button5 - PB5
-//! Button6 - PB6
-//! Button7 - PB7
-//! Button8 - PC4
-//! Button9 - PC5
-//! Button10 - PC6
-//! Button11 - PC7
-//! Button12 - PA2
+//! BUTTON0 - PB0
+//! BUTTON1 - PB1
+//! BUTTON2 - PB2
+//! BUTTON3 - PB3
+//! BUTTON4 - PB4
+//! BUTTON5 - PB5
+//! BUTTON6 - PB6
+//! BUTTON7 - PB7
+//! BUTTON8 - PC4
+//! BUTTON9 - PC5
+//! BUTTON10 - PC6
+//! BUTTON11 - PC7
+//! BUTTON12 - PA2
 //! BUTTON13 - PA3
 //! BUTTON14 - PA4
 //! BUTTON15 - PA5
@@ -596,7 +596,6 @@ main(void)
             if((ui16Buttons>>8) & 0x40)
             {
                 sReportA.ui16Buttons |= 0x4000;
-                //printButton();
 
             }
 

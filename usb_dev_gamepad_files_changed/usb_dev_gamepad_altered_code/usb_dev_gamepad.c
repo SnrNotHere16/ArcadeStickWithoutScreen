@@ -508,104 +508,104 @@ main(void)
             ButtonsPoll(&ui16ButtonsChanged, &ui16Buttons);
 
             sReportA.ui16Buttons = 0;
-            //Button0
+			
+            //Button0 - PB0
             if(ui16Buttons & BUTTON0)
             {
                 sReportA.ui16Buttons |= 0x0001;
 
             }
-            //Button1
+            //Button1 - PB1
             if(ui16Buttons & BUTTON1)
             {
                 sReportA.ui16Buttons |= 0x0002;
 
             }
-            //Button2
+            //Button2 - PB2
             if(ui16Buttons & BUTTON2)
             {
                 sReportA.ui16Buttons |= 0x0004;
 
             }
-            //Button3
+            //Button3 - PB3
             if(ui16Buttons & BUTTON3)
             {
                 sReportA.ui16Buttons |= 0x0008;
 
             }
-            //Button4
+            //Button4 - PB4
             if(ui16Buttons & BUTTON4)
             {
                 sReportA.ui16Buttons |= 0x0010;
 
             }
-            //Button5
+            //Button5 - PB5
             if(ui16Buttons & BUTTON5)
             {
                 sReportA.ui16Buttons |= 0x0020;
 
             }
-            //Button6
+            //Button6 - PB6
             if(ui16Buttons & BUTTON6)
             {
                 sReportA.ui16Buttons |= 0x0040;
 
             }
-            //Button7
+            //Button7 - PB7
             if(ui16Buttons & BUTTON7)
             {
                 sReportA.ui16Buttons |= 0x0080;
 
             }
-            //Button8
+            //Button8 - PC4
             if( (ui16Buttons>>8) & 0x01)
             {
                 sReportA.ui16Buttons |= 0x0100;
 
             }
-            //Button9
+            //Button9 - PC5
             if((ui16Buttons>>8) & 0x02)
             {
                 sReportA.ui16Buttons |= 0x0200;
 
             }
-            //Button10
+            //Button10 - PC6
             if((ui16Buttons>>8) & 0x04)
             {
                 sReportA.ui16Buttons |= 0x0400;
 
             }
-            //Button11
+            //Button11 - PC7
             if((ui16Buttons>>8) & 0x08)
             {
                 sReportA.ui16Buttons |= 0x0800;
 
             }
-            //Button12
+            //Button12 - PA2
             if((ui16Buttons>>8) & 0x10)
             {
                 sReportA.ui16Buttons |= 0x1000;
 
             }
-            //Button13
+            //Button13 - PA3
             if((ui16Buttons>>8) & 0x20)
             {
                 sReportA.ui16Buttons |= 0x2000;
 
             }
-            //Button14
+            //Button14 - PA4
             if((ui16Buttons>>8) & 0x40)
             {
                 sReportA.ui16Buttons |= 0x4000;
 
             }
 
-            //Button14
+            //Button15 -PA5
             if((ui16Buttons>>8) & 0x80)
             {
                 sReportA.ui16Buttons |= 0x8000;
 
             }
-
 
             if(ui16ButtonsChanged)
             {

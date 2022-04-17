@@ -93,13 +93,6 @@ ButtonsPoll(uint16_t *pui16Delta, uint16_t *pui16RawState)
     //  if the caller supplied storage for the
     // raw value.
     //
-    /*
-    ui32Data  =
-            (ROM_GPIOPinRead(BUTTONS_GPIO_BASE2,  GPIO_PIN_0)<<12) |
-                (ROM_GPIOPinRead(BUTTONS_GPIO_BASE2,  GPIO_PIN_4)<<9)  |
-               ((ROM_GPIOPinRead(BUTTONS_GPIO_BASE1, ALL_BUTTONS1))<<4)|
-                (ROM_GPIOPinRead(BUTTONS_GPIO_BASE, ALL_BUTTONS));
-    */
     ui32Data  =
                 (ROM_GPIOPinRead(BUTTONS_GPIO_BASE2, ALL_BUTTONS2) <<10)|
                 (ROM_GPIOPinRead(BUTTONS_GPIO_BASE1, ALL_BUTTONS1) <<4) |
@@ -217,13 +210,6 @@ ButtonsInit(void)
     // Initialize the debounced button state with the current state read from
     // the GPIO bank.
     //
-    /*
-    g_ui16ButtonStates =
-            (ROM_GPIOPinRead(BUTTONS_GPIO_BASE2,  GPIO_PIN_0)<<12) |
-            (ROM_GPIOPinRead(BUTTONS_GPIO_BASE2,  GPIO_PIN_4)<<9) |
-            (ROM_GPIOPinRead(BUTTONS_GPIO_BASE1, ALL_BUTTONS1)<<4)|
-            ROM_GPIOPinRead(BUTTONS_GPIO_BASE, ALL_BUTTONS);
-*/
     g_ui16ButtonStates =
             (ROM_GPIOPinRead(BUTTONS_GPIO_BASE2, ALL_BUTTONS2) <<10)|
             (ROM_GPIOPinRead(BUTTONS_GPIO_BASE1, ALL_BUTTONS1) <<4) |

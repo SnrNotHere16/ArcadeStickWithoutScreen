@@ -101,7 +101,9 @@ ButtonsPoll(uint16_t *pui16Delta, uint16_t *pui16RawState)
                 (ROM_GPIOPinRead(BUTTONS_GPIO_BASE, ALL_BUTTONS));
     */
     ui32Data  =
-                (ROM_GPIOPinRead(BUTTONS_GPIO_BASE2, ALL_BUTTONS2)) <<10;
+                (ROM_GPIOPinRead(BUTTONS_GPIO_BASE2, ALL_BUTTONS2) <<10)|
+                (ROM_GPIOPinRead(BUTTONS_GPIO_BASE1, ALL_BUTTONS1) <<4) |
+                (ROM_GPIOPinRead(BUTTONS_GPIO_BASE, ALL_BUTTONS));
 
 
 
@@ -223,7 +225,10 @@ ButtonsInit(void)
             ROM_GPIOPinRead(BUTTONS_GPIO_BASE, ALL_BUTTONS);
 */
     g_ui16ButtonStates =
-            ROM_GPIOPinRead(BUTTONS_GPIO_BASE2, ALL_BUTTONS2)<<12;
+            (ROM_GPIOPinRead(BUTTONS_GPIO_BASE2, ALL_BUTTONS2) <<10)|
+            (ROM_GPIOPinRead(BUTTONS_GPIO_BASE1, ALL_BUTTONS1) <<4) |
+            (ROM_GPIOPinRead(BUTTONS_GPIO_BASE, ALL_BUTTONS));
+
 
 }
 

@@ -22,6 +22,9 @@ Buttons/Ports   <br />
  Button13 - PA3 <br />
  Button14 - PA4 <br />
  Button15 - PA5 <br />
+ AnalogX - PE3
+ AnalogY - PE2
+ AnalogZ - PE1
 
 # Testing inputs
  The best way to test the inputs is to type "Set up USB game controllers" into the windows search bar. This should prompt this screen. 

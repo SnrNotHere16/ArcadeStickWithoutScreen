@@ -70,3 +70,7 @@ Original project running
    https://github.com/SnrNotHere16/ArcadeStickWithoutScreen/tree/master/usb_dev_gamepad_files_changed/usb_dev_gamepad_altered_code
    
 4. Build and load the program then switch to device mode. This time the green LED should flash instead of the blue LED. 
+
+# Ordering PCB 
+ I ordered from JLCPCB. The gerber files are provided at https://github.com/SnrNotHere16/ArcadeStickWithoutScreen/tree/master/Schematic_PCB/GerberFIles_DrillFiles
+<img src = "https://github.com/SnrNotHere16/ArcadeStickWithoutScreen/blob/master/ArcadeStickImages/JLCPC_PCB0_Info.PNG" width= "500" >

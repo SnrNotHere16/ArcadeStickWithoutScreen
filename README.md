@@ -36,7 +36,7 @@ Buttons/Ports   <br />
   <img src = "ArcadeStickImages/DriverImage.jpg" width= "500" >
   
  # Schematic
- Schematic: https://github.com/SnrNotHere16/ArcadeStickWithoutScreen/blob/master/Schematic_PCB/16buttonTivaCGamepadSchematic.pdf
+ Schematic: https://github.com/SnrNotHere16/ArcadeStickWithoutScreen/blob/master/Schematic_PCB/16buttonTivaCGamepadSchematic.pdf <br />
  <img src = "https://github.com/SnrNotHere16/ArcadeStickWithoutScreen/blob/master/ArcadeStickImages/CircuitMakerSchematic.PNG" width= "500" > 
  
  # PCB

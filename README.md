@@ -44,8 +44,10 @@ Buttons/Ports   <br />
    <img src = "https://github.com/SnrNotHere16/ArcadeStickWithoutScreen/blob/master/ArcadeStickImages/2DPCB_PolygonPour.PNG" width= "500" > 
    <img src = "https://github.com/SnrNotHere16/ArcadeStickWithoutScreen/blob/master/ArcadeStickImages/3DPCB_First.PNG" width= "500" > 
    <img src = "https://github.com/SnrNotHere16/ArcadeStickWithoutScreen/blob/master/ArcadeStickImages/PCB_0_2.jpg" width= "500" > 
+    <img src = "https://github.com/SnrNotHere16/ArcadeStickWithoutScreen/blob/master/ArcadeStickImages/PCB_0_3.jpg" width= "500" > 
    <img src = "https://github.com/SnrNotHere16/ArcadeStickWithoutScreen/blob/master/ArcadeStickImages/PCB_0_1.jpg" width= "500" > 
    <img src = "https://github.com/SnrNotHere16/ArcadeStickWithoutScreen/blob/master/ArcadeStickImages/PCB_0_0.jpg" width= "500" > 
+   
    
  # Additional Images
 

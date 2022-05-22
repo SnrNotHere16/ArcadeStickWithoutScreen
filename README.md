@@ -52,7 +52,7 @@ Buttons/Ports   <br />
  # Additional Images
 
  
- # Simple Setup
+ # Simple Setup <br />
 1. Open LM Flash Programmer
   <img src = "https://github.com/SnrNotHere16/ArcadeStickWithScreen/blob/master/ArcadeStickImages/LMFlashPlayer.PNG" width = "100">
 2. Select TM4C123G LaunchPad 

@@ -74,6 +74,7 @@ Original project running
 3. If you would like to run this repository's project. You need to modify four files. Copy and paste the code from these files to the matching files in the starter project.
    https://github.com/SnrNotHere16/ArcadeStickWithoutScreen/tree/master/usb_dev_gamepad_files_changed/usb_dev_gamepad_altered_code
    
+   <br />
 4. Build and load the program then switch to device mode. This time the green LED should flash instead of the blue LED. 
 
 # Ordering PCB 
